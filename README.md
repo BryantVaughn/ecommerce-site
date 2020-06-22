@@ -1,0 +1,2 @@
+# Demo E-Commerce Site
+This is a demo e-commerce website that I'm building to practice plain JavaScript. The goal is to provide authentication for site admins to add, edit, and delete items within the store, but any user can view the site without authentication. It will not support actual checkout as it is just for practicing purposes.
