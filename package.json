@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "This is a demo e-commerce website that I'm building to practice plain JavaScript. The goal is to provide authentication for site admins to add, edit, and delete items within the store, but any user can view the site without authentication. It will not support actual checkout as it is just for practicing purposes.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryantVaughn/ecommerce-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryantVaughn/ecommerce-site/issues"
+  },
+  "homepage": "https://github.com/BryantVaughn/ecommerce-site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
