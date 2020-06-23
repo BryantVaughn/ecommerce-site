@@ -24,9 +24,11 @@ class UsersRepository {
   async create(attrs) {
     const records = await this.getAll();
     records.push(attrs);
-    await fs.promises.writeFile(
-      this.filename, JSON.stringify(records), { encoding: "utf8" }
-    );
+    await this.writeAll(records);
+  }
+
+  async writeAll(records) {
+    await fs.promises.writeFile(this.filename, JSON.stringify(records, null, 2));
   }
 }
 
