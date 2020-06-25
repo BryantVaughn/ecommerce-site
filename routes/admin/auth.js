@@ -11,7 +11,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.post("/signup", [
-  check("email").isEmail(),
+  check("email").isEmail().normalizeEmail(),
   check("password"),
   check("passwordConfirmation")
 ], async (req, res) => {
