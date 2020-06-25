@@ -21,5 +21,6 @@ module.exports = {
     .withMessage("Must be between 8 and 20 characters")
     .custom((passwordConfirmation, { req }) => {
       if (passwordConfirmation !== req.body.password) throw new Error("Passwords must match");
+      return true;
     })
 };
