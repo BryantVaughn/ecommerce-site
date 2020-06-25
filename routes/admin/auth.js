@@ -18,7 +18,7 @@ router.post(
       .normalizeEmail()
       .isEmail()
       .withMessage("Must be a valid email")
-      .custom(async email => {
+      .custom(async (email) => {
         const existingUser = await usersRepo.getOneBy({ email });
         if (existingUser) throw new Error("Email in use");
       }),
@@ -30,6 +30,9 @@ router.post(
       .trim()
       .isLength({ min: 8, max: 20 })
       .withMessage("Must be between 8 and 20 characters")
+      .custom((passwordConfirmation, { req }) => {
+        if (passwordConfirmation !== req.body.password) throw new Error("Passwords must match");
+      })
   ],
   async (req, res) => {
     const errors = validationResult(req);
