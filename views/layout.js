@@ -5,7 +5,7 @@ module.exports = ({ content }) => {
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shop</title>
+        <title>Shop-Nopoly</title>
         
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
         <link href="/css/main.css" rel="stylesheet">
@@ -22,7 +22,7 @@ module.exports = ({ content }) => {
                     <a href=""><i class="fa fa-phone"></i>+1 555 987 6543</a>
                   </li>
                   <li>
-                    <a href=""><i class="fa fa-envelope"></i> shop@myshop.com</a>
+                    <a href=""><i class="fa fa-envelope"></i> shop@shop_nopoly.com</a>
                   </li>
                 </ul>
               </div>
